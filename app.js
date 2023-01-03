@@ -39,6 +39,7 @@ Groupchat.belongsTo(User)
 User.belongsToMany(Group,{through:Usergroup});
 Group.belongsToMany(User,{through:Usergroup});
 
+//frontend merge
 
 app.use((req,res)=>{
     console.log('urlll',req.url)
